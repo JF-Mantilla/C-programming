@@ -63,12 +63,99 @@ void exe4(){
 
 }
 
+int exe5() {
+    int grid[4][4];  // 4x4 grid for storing the numbers
+    int rowSum[4] = {0}, colSum[4] = {0};
+    int diagSum1 = 0, diagSum2 = 0;
 
-int main(){
-    //exe1();
-    //exe2();
-    //exe3();
-    exe4();
+    // Ask user to input 16 numbers
+    printf("Enter the numbers from 1 to 16 in any order:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            scanf("%d", &grid[i][j]);
+        }
+    }
+
+    // Display the grid and calculate sums
+    printf("The 4x4 grid is:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("%d\t", grid[i][j]);
+            rowSum[i] += grid[i][j];  // Calculate row sums
+            colSum[j] += grid[i][j];  // Calculate column sums
+            if (i == j) {
+                diagSum1 += grid[i][j];  // Calculate main diagonal sum
+            }
+            if (i + j == 3) {
+                diagSum2 += grid[i][j];  // Calculate opposite diagonal sum
+            }
+        }
+        printf("\n");
+    }
+
+    // Display row sums
+    printf("\nRow sums: ");
+    for (int i = 0; i < 4; i++) {
+        printf("%d ", rowSum[i]);
+    }
+
+    // Display column sums
+    printf("\nColumn sums: ");
+    for (int i = 0; i < 4; i++) {
+        printf("%d ", colSum[i]);
+    }
+
+    // Display diagonal sums
+    printf("\nDiagonal sums: %d %d\n", diagSum1, diagSum2);
+}
+
+
+int main(void){
+
+int opcion;
+
+    do {
+        // Show Menu
+        printf("Select:\n");
+        printf("1. date form \n");
+        printf("2. format product information\n");
+        printf("3. ISBN break down\n");
+        printf("4. display phone number \n");
+        printf("5. magic square \n");
+        printf("Enter option (1-5): \n");
+        printf("Enter 7 to exit: ");
+        scanf("%d", &opcion);
+
+        switch(opcion) {
+            case 1:
+                exe1();
+                break;
+            
+            case 2:
+                exe2();
+                break;
+
+            case 3:
+                exe3();
+                break;
+
+            case 4:
+                exe4();
+                break;
+
+            case 5:
+                exe5();
+                break;
+
+            default:
+                printf("Try Again.\n");
+                break;  
+        }
+        // Clarity
+        printf("\n");
+
+    } while (opcion != 7);
+    printf("bye bye.\n");
 
     return 0;
 }
