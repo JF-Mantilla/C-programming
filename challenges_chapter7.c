@@ -1,27 +1,50 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int exe1() {
-    float num, largest_number = -1;
+    
+    char phone_number[100];
+    printf("Enter phone number: ");
+    scanf("%s", phone_number);
 
-    while (1) {
-        printf("Enter a number: ");
-        scanf("%f", &num);
-
-        if (num <= 0) {
-            break;  // Stop if the user enters 0 or a negative number
-        }
-
-        if (num > largest_number) {
-            largest_number = num;
+    // Loop through each character of the input
+    for (int i = 0; phone_number[i] != '\0'; i++) {
+        // Convert the letter to the corresponding digit
+        if (isalpha(phone_number[i])) {
+            switch (toupper(phone_number[i])) {
+                case 'A': case 'B': case 'C':
+                    phone_number[i] = '2';
+                    break;
+                case 'D': case 'E': case 'F':
+                    phone_number[i] = '3';
+                    break;
+                case 'G': case 'H': case 'I':
+                    phone_number[i] = '4';
+                    break;
+                case 'J': case 'K': case 'L':
+                    phone_number[i] = '5';
+                    break;
+                case 'M': case 'N': case 'O':
+                    phone_number[i] = '6';
+                    break;
+                case 'P': case 'R': case 'S':
+                    phone_number[i] = '7';
+                    break;
+                case 'T': case 'U': case 'V':
+                    phone_number[i] = '8';
+                    break;
+                case 'W': case 'X': case 'Y':
+                    phone_number[i] = '9';
+                    break;
+                // Letters like Q and Z can be mapped to 7 and 9, respectively, 
+                // or handle them as you see fit if they are expected in the input.
+                default:
+                    break;
+            }
         }
     }
 
-    if (largest_number > 0) {
-        printf("The largest number entered was %.2f\n", largest_number);
-    } else {
-        printf("No non-negative numbers were entered.\n");
-    }
-
+    printf("Numeric form: %s\n", phone_number);
     return 0;
 }
 
