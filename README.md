@@ -7,3 +7,5 @@ Codes and challenges from book "C Programming - A modern Approach" by K. N. King
 4. Chapter 4: Expressions
 5. Chapter 5: Selection Statements
 6. Chapter 6: Loops
+7. Chapter 7: Basic Types
+8. Chapter 8: Arrays
