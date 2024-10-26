@@ -13,3 +13,7 @@ Codes and challenges from book "C Programming - A modern Approach" by K. N. King
 9. Chapter 9: Functions
 10. Chapter 10: Program Organization
 11. Chapter 11: Pointers
+12. Chapter 12: Pointers and arrays
+13. Chapter 13: Strings
+14. Chapter 14: The Processor
+
