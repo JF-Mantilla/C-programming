@@ -19,5 +19,5 @@ Codes and challenges from book "C Programming - A modern Approach" by K. N. King
 15. Chapter 15: Writing Large Programs
 16. Chapter 16:Structures, Unions and Enumerations
 17. Chapter 17: Advanced Uses of Pointers
-
-
+18. Chapter 18: Declarations
+19. Chapter 19: Program Design
