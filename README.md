@@ -21,3 +21,5 @@ Codes and challenges from book "C Programming - A modern Approach" by K. N. King
 17. Chapter 17: Advanced Uses of Pointers
 18. Chapter 18: Declarations
 19. Chapter 19: Program Design
+20. Chapter 20: Low-Level Programming
+21. Chapter 21: The Standard Library
