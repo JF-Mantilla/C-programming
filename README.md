@@ -23,3 +23,8 @@ Codes and challenges from book "C Programming - A modern Approach" by K. N. King
 19. Chapter 19: Program Design
 20. Chapter 20: Low-Level Programming
 21. Chapter 21: The Standard Library
+22. Chapter 22: Input/Output
+23. Chapter 23: Library Support for Numbers and Character data
+24. Chapter 24: Error Handling
+25. Chapter 25: International Features
+
