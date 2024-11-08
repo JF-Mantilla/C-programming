@@ -27,4 +27,5 @@ Codes and challenges from book "C Programming - A modern Approach" by K. N. King
 23. Chapter 23: Library Support for Numbers and Character data
 24. Chapter 24: Error Handling
 25. Chapter 25: International Features
-
+26. Chapter 26: Miscellaneous Library Functions
+27. Chapter 27: Additional C99 Support for Mathematics
